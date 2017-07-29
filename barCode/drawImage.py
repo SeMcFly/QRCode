@@ -1,3 +1,10 @@
+'''
+底层画图基类
+方法：
+save:将生成的图片保存到本地
+show:将生成的图片显示到屏幕
+drawRect:根据坐标和颜色画一个矩形
+'''
 from PIL import Image , ImageDraw
 
 class DrawImage:
@@ -41,11 +48,10 @@ class DrawImage:
           h = int((self.size - icon_h)/2)
           self.img.paste(icon,(w,h),icon)
 
-if __name__ == '__main__':
-     img = DrawImage(21,4,10,'white')
-     img.drawRect(20,0)
-     img.drawRect(20,20)
-     img.drawRect(0,20)
-     img.replaceImage('gril.png')
-     img.show()
-     
+#if __name__ == '__main__':
+#     img = DrawImage(21,4,10,'white')
+#     img.drawRect(20,0)
+#     img.drawRect(20,20)
+#     img.drawRect(0,20)
+#     img.replaceImage('gril.png')
+#     img.show()
