@@ -150,6 +150,7 @@ class BarCode:
 
      def getModleLen(self,version):
           return (version * 4 + 17)
+
 def createQRCode(ec,boxsize,boder,v=2,data=None,save=None,reImgae=None):
      bc = BarCode(version=v,ecl = ec,boder=boder,box_size=boxsize)
      if data:
